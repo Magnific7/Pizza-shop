@@ -35,7 +35,6 @@ There are no known bugs.
 * JAVASCRIPT
 * jQUERY
 
-
 ## Support and contact details
 In case you meet any bugs please let us know .
 You can contact us on 0785712803

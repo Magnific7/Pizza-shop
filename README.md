@@ -13,7 +13,7 @@ This is a website of the pizza shop .Here you  can :
 
  
 ## Author
-This application was made by a student in Moringa school called Magnific.
+This application was made by a student in Moringa school called UM Magnific.
 * email:mjones6944@gmail.com
 
 ## Setup/Installation Requirements

@@ -5,7 +5,7 @@ This is a website of the pizza shop .Here you  can :
 
 * Make an order.
 * pick the type of topping you want.
-* pick which size you want .
+* Pick which size you want .
 * Pick the crust you want.
 * Decide whether you have the pizza delivered to you .
 * Or if you will come pick it up.

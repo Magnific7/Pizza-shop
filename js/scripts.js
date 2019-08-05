@@ -12,6 +12,9 @@ function Order(size,crust,toppings,number,delivery){
      //user interface Logic
 
      $(document).ready(funtion()){
+      $('input[type="checkbox"]').on('change', function() {
+        $('input[name="' + this.name + '"]').not(this).prop('checked', false);
+    });
        $('button').click(function(){
          // event.preventDefault();
          console.log('error')

@@ -20,8 +20,7 @@ This application was made by a student in Moringa school called UM Magnific.
 
 To view the website, 
 * click [Magnific's website]
-('https://magnific7.github.io/Pizza-shop/')
-or 
+('https://magnific7.github.io/Pizza-shop/') or 
 * copy the link and paste it to your browser and load it.  
 ## Known Bugs
 

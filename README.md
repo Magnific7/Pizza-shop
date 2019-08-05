@@ -12,3 +12,14 @@ This is a website of the pizza shop .Here you  can :
 * Mind you you can make as many orders as you want.
 
 The website is filled with dummy text where needed. 
+## Author
+This application was made by a student in Moringa school called Magnific.
+* email:mjones6944@gmail.com
+
+## Setup/Installation Requirements
+
+To view the website, 
+* click [Magnific's website]
+('https://magnific7.github.io/Pizza-shop/')
+or 
+* copy the link and paste it to your browser and load it.  

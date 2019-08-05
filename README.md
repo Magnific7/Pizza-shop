@@ -23,3 +23,14 @@ To view the website,
 ('https://magnific7.github.io/Pizza-shop/')
 or 
 * copy the link and paste it to your browser and load it.  
+## Known Bugs
+
+There are no known bugs.
+
+## Built With
+
+* HTML
+* CSS
+* BOOTSTRAP
+* JAVASCRIPT
+* jQUERY

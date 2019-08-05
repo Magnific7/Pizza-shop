@@ -71,31 +71,58 @@
       <h3 class="card container">
         <br>Place your order here<br><br></h3>
       <br>
-
-      size:  <form>
-        <input type="checkbox" class="radio" name="small" value="small" id="size1">Small<br>
-        <input type="checkbox" class="radio" name="medium" value="medium" id="size2">Medium<br>
-        <input type="checkbox" class="radio" name="large" value="large" id="size3">Large<br>
-       
-      </form>
-      crust: <form>
-        <input type="checkbox" class="radio" name="crispy" value="crispy" id="crust1">Cripsy<br>
-        <input type="checkbox" class="radio" name="stuffed" value="onions" id="crust2">Stuffed<br>
-        <input type="checkbox" class="radio" name="gluten" value="gluten" id="crust3">Gluten-free<br>
-       
-      </form>
+<div id="pizzaOrder">
+      <div id="pizzaSize">
+        <label for="">Size</label>
+        <select required class="form-control" id="size">
+            <option></option>
+            <option value="Small">Small: 3$</option>
+            <option value="Medium">Medium: 4$</option>
+            <option value="Large">Large: 5$</option>
+        </select>
+    </div>
+    <div id="pizzaCrusts">
+      <label for="">Crust</label>
+      <select required class="form-control" id="crust">
+          <!-- <option></option> -->
+          <option value="crispy">Crispy: 1$</option>
+          <option value="stuffed">Stuffed: 2$</option>
+          <option value="gluten">Gluten-free: 1.5$</option>
+      </select>
+  </div>
       <br>
       <br>
 
-      Toppings:<form>
-        <input type="checkbox" name="mushroom" value="mushroom" id="topping1"> mushroom<br>
-        <input type="checkbox" name="onions" value="onions" id="topping2"> onions<br>
-        <input type="checkbox" name="sausage" value="sausage" id="topping3"> sausage<br>
-        <input type="checkbox" name="extra-cheese" value="extra-cheese" id="topping4"> extra-cheese<br>
-        <input type="checkbox" name="bacon" value="bacon"  id="topping5" checked> bacon<br><br>
-
-      </form>
-
+      <div id="Topping1">
+          <label for="">Option1:1$</label>
+          <select required class="form-control" id="Topping1">
+              <option></option>
+              <option value="Onions">Onions</option>
+              <option value="Spinach">Spinach</option>
+              <option value="Green">Green peper</option>
+              <option value="Mushroom">Mushroom</option>
+          </select>
+      </div>
+      <div id="Topping2">
+          <label for="">option2:1.5$</label>
+          <select required class="form-control" id="Topping2">
+              <option></option>
+              <option value="Chicken">Chicken</option>
+              <option value="Beef">Beef mince</option>
+              <option value="Peparoni">Pepperoni</option>
+              <option value="Sausage">Sausage</option>
+          </select>
+      </div>
+      <div id="Topping3">
+          <label for="">option3:0.5$</label>
+          <select required class="form-control" id="Topping3">
+              <option></option>
+              <option value="Chicken">Cheese</option>
+              <option value="Beef">Black Olive</option>
+              <option value="Peparoni">Spinach</option>
+              <option value="Sausage">Red Onions</option>
+          </select>
+    </div>
       <br>
       <br>
       <br>
@@ -110,8 +137,8 @@
     <br>
     <br>
 
-    Would you like your pizza to be delivered to you?
-    <br>
+   
+    <!-- <br>
     <br>
 
     <select>
@@ -124,10 +151,29 @@
     <button type="submit" style="background:yellow;margin-top:3%">Order Now</button><br>
     <br>
     <div id="show">
-      <h4>Your order is </h4>
+      <!-- <h4>Your order is </h4>
       <p> <span id="num?"> </span> <span id="size?"> sized pizza </span> with <span id="crust?"> crust and <span id="topping?"></span>
           topping.
-      </p>
+      </p> --> 
+
+      <br><br><br>
+      <h4>Price: <span id="totalPizzaCost"></span>$</h4>
+      <div id="order-details">
+          <p><a id="pizzaDetails">Your order</a></p>
+          <p id="pizzaDetail">
+          </p>
+          <div class="delive-pick">
+              Would you like your pizza to be delivered to you?
+              <br>
+              <button type="btn" class="btn btn-primary" id="deliver">Delivery</button>
+              <p id="deliveryPrice"></p>
+              <button type="btn" class="btn btn-primary" id="pickup">Pick up</button>
+              <p id="pick"></p>
+          </div><br>
+      </div>
+      <button type="btn" class="btn btn-primary" id="checkout">Checkout</button>
+      <h4>Total charges: <span id="check"></span>$</h4>
+  </div>
 
     </div>
     <div id="contact">
@@ -155,7 +201,7 @@
       </div>
 
     </div>
-
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>

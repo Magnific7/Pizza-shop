@@ -71,25 +71,28 @@
   <br>
 
         size: <select name="size"id="size">
-                <option value="2">Small(2$)</option>
-                <option value="3">Medium(3$)</option>
-                <option value="4">Large(4$)</option>
+                <option value="2" id="size1">Small</option>
+                <option value="3" id="size2">Medium</option>
+                <option value="4" id="size3">Large</option>
               </select>
 
               crust: <select name="crust" id="crust">
-                  <option value="0.5">Crispy(0.5$)</option>
-                  <option value="0.4">Stuffed(0.4$)</option>
-                  <option value="0.6">Gluten-free(0.6$)</option>
+                  <option value="Crispy" id="crust1">Crispy</option>
+                  <option value="stuffed" id="crust2">Stuffed</option>
+                  <option value="gluten" id="crust3">Gluten-free</option>
                 </select>
+                <br>
+                <br>
 
-              Toppings: <select name="toppings" id="topping">
-                    <option value="0.5">Mushroom(0.5$)</option>
-                    <option value="0.4">Onions(0.4$)</option>
-                    <option value="0.4">Sausage(0.4$)</option>
-                    <option value="0.5">Green pepper(0.5$)</option>
-                    <option value="0.8">extra cheese(0.8$)</option>
-                    <option value="0.4">Pepperoni(0.4$)</option>
-                  </select>
+              Toppings:<form>
+                <input type="checkbox" name="mushroom" value="mushroom"> mushroom<br>
+                <input type="checkbox" name="onions" value="onions"> onions<br>
+                <input type="checkbox" name="sausage" value="sausage"> sausage<br>
+                <input type="checkbox" name="extra-cheese" value="extra-cheese"> extra-cheese<br>
+                <input type="checkbox" name="bacon" value="bacon" checked> bacon<br><br>
+   
+              </form>
+              
 <br>
 <br>
 <br>
@@ -97,12 +100,19 @@
                   How many pizzas would you like to order for.
                   <input type="number" id="number">
 <br><br><br>
-<input class="btn" type="submit" value="Order">
+<!-- <input class="btn" type="submit" value="Order"> -->
 
             </div>
             <br>
             <br>
             <br>
+
+            <input class="btn" type="submit" value="Order Now" onclick="order()"><br>
+            <br>
+            <div id="show">
+              <h4>Your order is </h4>
+              <p> <span  id="num?"> </span> <span id="size?"> sized pizza </span> with <span id="crust?"> crust and <span id="topping?"></span> topping.
+              </p>
 
 </div>
 <div id="contact">

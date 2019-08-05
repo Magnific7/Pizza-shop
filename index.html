@@ -77,25 +77,25 @@
             <label for="">Size</label>
             <select required class="form-control" id="size">
               <option></option>
-              <option value="3">Small: 3$</option>
-              <option value="4">Medium: 4$</option>
-              <option value="5">Large: 5$</option>
+              <option value="3">Small</option>
+              <option value="4">Medium</option>
+              <option value="5">Large</option>
             </select>
           </div>
           <div id="crust.">
             <label for="">Crust</label>
             <select required class="form-control" id="crust">
               <!-- <option></option> -->
-              <option value="1" name="small">Crispy: 1$</option>
-              <option value="2" name="medium">Stuffed: 2$</option>
-              <option value="3" name="large">Gluten-free: 1.5$</option>
+              <option value="1" name="small">Crispy</option>
+              <option value="2" name="medium">Stuffed</option>
+              <option value="3" name="large">Gluten-free</option>
             </select>
           </div>
           <br>
           <br>
 
           <div id="toppings.">
-            <label for="">Option1:1$</label>
+            <label for="">Option</label>
             <select required class="form-control" id="toppings">
          
               <option value="1">Onions</option>
@@ -123,8 +123,8 @@
             <label><input type="radio" name="Yes" value="No" > No</label>
           </div><br>
 
-          <button type="button" name="get" id="order">Order Now</button>
-          <button id="submitorder">Submit</button>
+          <!-- <button type="button" name="get" id="order">Order Now</button>
+          <button id="submitorder">Submit</button> -->
   </form>
   <br><br><br>
 
@@ -137,8 +137,8 @@
   </form>
   <div class="the-order">
     <h5>Your Order:</h5>
-    <p> A <span id="getsize"></span> sized pizza with <span id="getcrust"></span> crust and <span id="gettopping"></span>
-      toppings</p>
+    <p> A <span id="getsize"></span> $ sized pizza with <span id="getcrust"></span> $ crust and <span id="gettopping"></span>
+     $ topping</p>
     <h4>Total amount for pizza : <span id="sum"></span> $</h4>
   </div>
 

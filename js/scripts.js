@@ -4,12 +4,12 @@ $(document).ready(function(){
   $("#order").click(function(){
       var checkVal = $("input[name=Yes]:checked").val();
       if (checkVal === "yes"){
-          Amount = 3;
-          var getLocation = prompt("Tell your location:");
-          alert(" Pizza will be delivered at " + getLocation + " with additional amount of 3$");
+          Amount = 1;
+          var getLocation = prompt("Let us know your location:");
+          alert(" Your pizza will be delivered at " + getLocation + " with additional amount of 1$ for delivery");
       }
   })
-  $("form").submit(function(event){
+  $("#order").click(function(event){
   var Size = parseFloat(document.getElementById('size').value);
   var Crust = parseFloat(document.getElementById('crust').value);
   var Topping = parseFloat(document.getElementById('toppings').value);

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -72,7 +73,7 @@
           <br>Place your order here<br><br></h3>
         <br>
         <div id="pizzaOrder">
-          <div id="size">
+          <div id="size.">
             <label for="">Size</label>
             <select required class="form-control" id="size">
               <option></option>
@@ -81,26 +82,26 @@
               <option value="5">Large: 5$</option>
             </select>
           </div>
-          <div id="crust">
+          <div id="crust.">
             <label for="">Crust</label>
             <select required class="form-control" id="crust">
               <!-- <option></option> -->
-              <option value="1">Crispy: 1$</option>
-              <option value="2">Stuffed: 2$</option>
-              <option value="1.5">Gluten-free: 1.5$</option>
+              <option value="1" name="small">Crispy: 1$</option>
+              <option value="2" name="medium">Stuffed: 2$</option>
+              <option value="3" name="large">Gluten-free: 1.5$</option>
             </select>
           </div>
           <br>
           <br>
 
-          <div id="toppings">
+          <div id="toppings.">
             <label for="">Option1:1$</label>
-            <select required class="form-control" id="Topping1">
-              <option></option>
+            <select required class="form-control" id="toppings">
+         
               <option value="1">Onions</option>
               <option value="2">Spinach</option>
-              <option value="1">Green peper</option>
-              <option value="2">Mushroom</option>
+              <option value="3">Green peper</option>
+              <option value="4">Mushroom</option>
             </select>
           </div>
           <label>Number of pizzas you would like</label>
@@ -116,28 +117,29 @@
           <br>
           <br>
           <br>
+          <div class="delive-pick">
+            Would you like your pizza to be delivered to you?
+            <label><input type="radio" name="Yes" value="yes" id="myRadio" > Yes</label>
+            <label><input type="radio" name="Yes" value="No" > No</label>
+          </div><br>
 
-          <button type="button" name="get" id="ordernow">Order Now</button>
+          <button type="button" name="get" id="order">Order Now</button>
           <button id="submitorder">Submit</button>
   </form>
   <br><br><br>
 
   <p id="pizzaDetail">
   </p>
-  <div class="delive-pick">
-    Would you like your pizza to be delivered to you?
-    <label><input type="radio" name="Yes" value="yes" id="myRadio" > Yes</label>
-    <label><input type="radio" name="Yes" value="No" > No</label>
-  </div><br>
+ 
   </div>
 
   <form id="delivery">
   </form>
-  <div class="ordersummary">
+  <div class="the-order">
     <h5>Your Order:</h5>
-    <p> A <span id="getsizehistory"></span> sized pizza with <span id="getcrusthistory"></span> crust and <span id="gettoppinghistory"></span>
+    <p> A <span id="getsize"></span> sized pizza with <span id="getcrust"></span> crust and <span id="gettopping"></span>
       toppings</p>
-    <h4>Total amount for pizza : <span id="displaysum"></span></h4>
+    <h4>Total amount for pizza : <span id="sum"></span> $</h4>
   </div>
 
   </div>

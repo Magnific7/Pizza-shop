@@ -1,7 +1,7 @@
-
+var sizes = ["small", "medium" , "large"]
 $(document).ready(function(){
   var Amount = 0;
-  $("#ordernow").click(function(){
+  $("#order").click(function(){
       var checkVal = $("input[name=Yes]:checked").val();
       if (checkVal === "yes"){
           Amount = 3;
@@ -15,11 +15,13 @@ $(document).ready(function(){
   var Topping = parseFloat(document.getElementById('toppings').value);
   var Quantity = parseFloat(document.getElementById('num').value);
   var total = (Size + Crust + Topping + Quantity + Amount);
-  document.getElementById("getsizehistory").innerHTML =  Size;
-  document.getElementById("getcrusthistory").innerHTML =   Crust;
-  document.getElementById("gettoppinghistory").innerHTML =  Topping;
-  document.getElementById("displaysum").innerHTML = total;
-  $(".ordersummary").show();
+
+  
+  document.getElementById("getsize").innerHTML =  Size[sizes];
+  document.getElementById("getcrust").innerHTML =   Crust;
+  document.getElementById("gettopping").innerHTML =  Topping;
+  document.getElementById("sum").innerHTML = total;
+  $(".the-order").show();
   event.preventDefault();
   })
 })

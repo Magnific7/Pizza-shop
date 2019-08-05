@@ -17,7 +17,7 @@ $(document).ready(function(){
   var total = (Size + Crust + Topping + Quantity + Amount);
 
   
-  document.getElementById("getsize").innerHTML =  Size[sizes];
+  document.getElementById("getsize").innerHTML =  Size;
   document.getElementById("getcrust").innerHTML =   Crust;
   document.getElementById("gettopping").innerHTML =  Topping;
   document.getElementById("sum").innerHTML = total;

@@ -9,3 +9,12 @@ function Order(size,crust,toppings,number,delivery){
   Order.prototype.fullInfo=function(){
      return this.pizzaSize + "," + this.pizzaCrust + "," + this.pizzatoppings + "," + this.pizzaNumber + "," + this.pizzaDelivery;
   }
+     //user interface Logic
+
+     $(document).ready(funtion()){
+       $('button').click(function(){
+         // event.preventDefault();
+         console.log('error')
+         
+       }
+     }

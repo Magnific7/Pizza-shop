@@ -72,26 +72,27 @@
         <br>Place your order here<br><br></h3>
       <br>
 
-      size: <select name="size" id="size">
-        <option value="2" id="size1">Small</option>
-        <option value="3" id="size2">Medium</option>
-        <option value="4" id="size3">Large</option>
-      </select>
-
-      crust: <select name="crust" id="crust">
-        <option value="Crispy" id="crust1">Crispy</option>
-        <option value="stuffed" id="crust2">Stuffed</option>
-        <option value="gluten" id="crust3">Gluten-free</option>
-      </select>
+      size:  <form>
+        <input type="checkbox" name="small" value="small" id="size1">Small<br>
+        <input type="checkbox" name="medium" value="medium" id="size2">Medium<br>
+        <input type="checkbox" name="large" value="large" id="size3">Large<br>
+       
+      </form>
+      crust: <form>
+        <input type="checkbox" name="crispy" value="crispy" id="crust1">Cripsy<br>
+        <input type="checkbox" name="stuffed" value="onions" id="crust2">Stuffed<br>
+        <input type="checkbox" name="gluten" value="gluten" id="crust3">Gluten-free<br>
+       
+      </form>
       <br>
       <br>
 
       Toppings:<form>
-        <input type="checkbox" name="mushroom" value="mushroom"> mushroom<br>
-        <input type="checkbox" name="onions" value="onions"> onions<br>
-        <input type="checkbox" name="sausage" value="sausage"> sausage<br>
-        <input type="checkbox" name="extra-cheese" value="extra-cheese"> extra-cheese<br>
-        <input type="checkbox" name="bacon" value="bacon" checked> bacon<br><br>
+        <input type="checkbox" name="mushroom" value="mushroom" id="topping1"> mushroom<br>
+        <input type="checkbox" name="onions" value="onions" id="topping2"> onions<br>
+        <input type="checkbox" name="sausage" value="sausage" id="topping3"> sausage<br>
+        <input type="checkbox" name="extra-cheese" value="extra-cheese" id="topping4"> extra-cheese<br>
+        <input type="checkbox" name="bacon" value="bacon"  id="topping5" checked> bacon<br><br>
 
       </form>
 
@@ -100,7 +101,7 @@
       <br>
       <br>
       How many pizzas would you like to order for.
-      <input type="number" id="number">
+      <input type="number" id="num">
       <br><br><br>
       <!-- <input class="btn" type="submit" value="Order"> -->
 
@@ -114,8 +115,8 @@
     <br>
 
     <select>
-      <option value="Yes">Yes</option>
-      <option value="No">No</option>
+      <option id="del1" value="Yes">Yes</option>
+      <option id="del2" value="No">No</option>
     </select>
 <br>
 <br>

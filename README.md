@@ -11,7 +11,7 @@ This is a website of the pizza shop .Here you  can :
 * Or if you will come pick it up.
 * Mind you you can make as many orders as you want.
 
-The website is filled with dummy text where needed. 
+ 
 ## Author
 This application was made by a student in Moringa school called Magnific.
 * email:mjones6944@gmail.com
